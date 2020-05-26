@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { Parallax, Background } from 'react-parallax';
+import phone-mock-up from './phone-mock-up.png'
 
 class Phone extends Component {
   constructor() {
@@ -13,24 +14,7 @@ class Phone extends Component {
   render() {
     return (
       <div>
-        <Parallax
-            bgImage={'/path/to/another/image'}
-            strength={400}
-            renderLayer={percentage => (
-                <div
-                    style={{
-                        position: 'absolute',
-                        background: `rgba(255, 125, 0, ${percentage * 1})`,
-                        left: '50%',
-                        top: '50%',
-                        width: percentage * 500,
-                        height: percentage * 500,
-                    }}
-                />
-            )}
-        >
-            <p>... Content</p>
-        </Parallax>
+        <img src='phone-mock-up.png' />
       </div>
     );
   }
